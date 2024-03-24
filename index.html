@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Femma's tekentool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> <!--inspo van https://www.youtube.com/watch?v=mRDo-QXVUv8-->
+    <div class="container"> 
+        <section class="tools-board"> 
+          <div class="rijtje">
+            <label class="titel">Figuurtjes</label>
+            <ul class="options">
+              <li class="option tool" id="rectangle">
+                <img src="images/rechthoek.PNG" alt="rechthoek">
+                <p>rechthoek</p>
+              </li>
+              <li class="option tool" id="circle">
+                <img src="images/cirkel.PNG" alt="cirkel">
+                <p>cirkel</p>
+              </li>
+              <li class="option tool" id="triangle">
+                <img src="images/driehoek.PNG" alt="driehoek">
+                <p>driehoek</p>
+              </li>
+              <li class="option">
+                <input type="checkbox" id="kleur-vullen">
+                <label for="kleur-vullen">vorm invullen met kleur</label>
+              </li>
+            </ul>
+          </div>
+          <div class="rijtje">
+            <label class="titel">Kwasten</label>
+            <ul class="options">
+              <li class="option active tool" id="brush">
+                <img src="images/kwast.png" alt="penseel">
+                <p>penseel</p>
+              </li>
+              <li class="option tool" id="eraser">
+                <img src="images/gum.png" alt="een gum">
+                <p>gum</p>
+              </li>           
+              <li class="option">
+                <input type="range" id="maat-slider" min="1" max="30" value="5">
+              </li>
+            </ul>
+          </div>
+          <div class="kleuren">
+            <label class="titel">Kleuren</label>
+            <ul class="kleuropties">
+              <li class="option"></li>
+              <li class="option selected"></li>
+              <li class="option"></li>
+              <li class="option"></li>
+              <li class="option">
+                <input type="color" id="kleuren-kiezer" value="#4A98F7">
+              </li>
+            </ul>
+          </div>
+          <div class="rij-knoppen">
+            <button class="canvas-legen">Verwijder alles</button>
+            <button class="img-opslaan">Kunstwerk opslaan</button>
+          </div>
+        </section> 
+      <section class="kleur-bord">
+        <canvas></canvas>
+      </section>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>
